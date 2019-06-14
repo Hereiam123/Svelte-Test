@@ -1,6 +1,7 @@
 <script>
   import Navbar from "./Navbar.svelte";
   import Player from "./Player.svelte";
+  import AddPlayer from "./AddPlayer.svelte";
 
   let players = [{ name: "John", points: 5 }, { name: "Jane", points: 10 }];
 </script>
@@ -11,6 +12,7 @@
 
 <Navbar />
 <div class="container">
+  <AddPlayer />
   {#if players.length === 0}
     <p>No Players</p>
   {:else}
